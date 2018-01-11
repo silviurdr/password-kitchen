@@ -6,9 +6,30 @@ This is a small project to hash passwords and verify hashed passwords.
 
 ## Design
 
-The designer sent us the following plan:
+The designer sent us the following plans:
+
+### Hashing - User input
+
+![Hashing - User input](design/design_hash_input.png)
+
+### Hashing - Result hash
+
+![Hashing - Result hash](design/design_hash_result.png)
+
+### Verification - User input
+
+![Verification - User input](design/design_verify_input.png)
+
+### Verification - Match
+
+![Verification - Match](design/design_verify_match.png)
+
+### Verification - Doesn't match
+
+![Verification - Doesn't match](design/design_verify_fail.png)
 
 
+### Details
 
 Use the following info to achieve the desired result:
 - Colors:
@@ -23,6 +44,7 @@ Use the following info to achieve the desired result:
     - Background: ![](http://via.placeholder.com/15/fff?text=%20) #fff
     - Border color: ![](http://via.placeholder.com/15/01579b?text=%20) #01579b
     - Text color: ![](http://via.placeholder.com/15/222?text=%20) #222
+    - Inactive textarea: ![](http://via.placeholder.com/15/eee?text=%20) #eee
   - Buttons:
     - Background: ![](http://via.placeholder.com/15/1976d2?text=%20) #1976d2
     - Border color: ![](http://via.placeholder.com/15/01579b?text=%20) #01579b
