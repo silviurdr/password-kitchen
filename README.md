@@ -35,8 +35,8 @@ Use the following info to achieve the desired result:
 - Colors:
   - Background:
     - Default: ![](http://via.placeholder.com/15/1976d2?text=%20) #1976d2
-    - Verified: ![](http://via.placeholder.com/15/1976d2?text=%20) #1976d2
-    - Failed verification: ![](http://via.placeholder.com/15/1976d2?text=%20) #1976d2
+    - Verified: ![](http://via.placeholder.com/15/43a047?text=%20) #43a047
+    - Failed verification: ![](http://via.placeholder.com/15/e53935?text=%20) #e53935
   - Text:
     - Page header: ![](http://via.placeholder.com/15/fff?text=%20) #fff
     - Card header: ![](http://via.placeholder.com/15/222?text=%20) #222
