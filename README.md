@@ -49,6 +49,9 @@ Use the following info to achieve the desired result:
     - Background: ![](http://via.placeholder.com/15/1976d2?text=%20) #1976d2
     - Border color: ![](http://via.placeholder.com/15/01579b?text=%20) #01579b
     - Text color: ![](http://via.placeholder.com/15/fff?text=%20) #fff
+- Font:
+  - The light *(300)* version of **Montserrat** font family is used in the whole application
+  - It can be linked from Google's font repository
 - Background:
   - It should cover the whole page
   - When the verification succeeds, the background should change to green.
@@ -57,6 +60,11 @@ Use the following info to achieve the desired result:
   - They are 400px wide and have 40px gap between them.
   - For the shadow, you can use this snippet: `box-shadow: 0 1px 5px rgba(0, 0, 0, .9)`
   - There is 40px space inside between the edge of the card and the start of the inputs and buttons
+  - They have 4px border radius
+- Inputs:
+  - Every input has 4px border radius
+  - The hash result textarea has an inactive property
+
 
 ## Hashing
 
