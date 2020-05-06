@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Kitchen</title>
+    <link rel="stylesheet" type="text/css" href='../static/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="site-title">Password Kitchen</h1>
+        <a style="color: white" href="{{url_for('cookie_insertion')}}">Set Cookie</a>
+        <div class="cards-container">
+            <div class="form-cards">
+                <form action="{{url_for('return_hash_password')}}" method='get'>
+                    <h3>Hash</h3>
+                    <div class="form-group">
+                        <input type="text" id='user-password-in' name="user-password-in" class="form-control"
+                            placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn submit">Hash it!</button>
+                    </div>
+                    <div class="form-group">
+                        <textarea id='hash-result' name='hash-result' class="hash-result" placeholder="hash"
+                            disabled="disabled">{% if hashed_password%}{{hashed_password}}{% endif %}</textarea>
+                    </div>
+
+                </form>
+            </div>
+            <div class="form-cards">
+                <form method='get' action="{{url_for('verify_password_result')}}">
+                    <h3>Hash</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="user-password-out" name="user-password-out"
+                            placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <textarea id='hash-input' name='hash-input' class="hash-input" placeholder="hash"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn submit">Verify it!</button>
+                    </div>
+                    {% if verification_result %}
+                    <h2 style="color:#43a047;">It's a match</h2>
+                    <style>
+                        html,
+                        body,
+                        .container-fluid {
+                            background-color: #43a047;
+                        }
+                    </style>
+                    {% endif %}
+                    {% if wrong_combination%}
+                    <style>
+                        html,
+                        body,
+                        .container-fluid {
+                            background-color: #e53935;
+                        }
+                    </style>
+                    <h2 style="color:#e53935;">Doesn't match</h2>
+                    {% endif %}
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
